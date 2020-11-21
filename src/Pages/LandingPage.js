@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react'
+import SignUpForm from '../Components/SignUpForm/SignUpForm';
+import Toolbar from '../Components/Toolbar/Toolbar';
 
 export default function LandingPage() {
     const [color, setColor] = useState("red");
@@ -28,10 +30,8 @@ export default function LandingPage() {
    
     return (
         <div>
-            <header>Hello World</header>
-            <button onClick = {testMe}>Press me</button>
-            <button onClick = {switchLights}>{lights}</button>
-    <h1>{value2}</h1>
+            <Toolbar></Toolbar>
+            <SignUpForm></SignUpForm>
         </div>
     )
 }
