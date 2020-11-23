@@ -30,8 +30,13 @@ export default function LandingPage() {
    
     return (
         <div>
-            <Toolbar></Toolbar>
-            <SignUpForm></SignUpForm>
+            <div id = "header">
+                <Toolbar></Toolbar>
+            </div>
+            
+            <div id = "center">
+                <SignUpForm></SignUpForm>
+            </div>
         </div>
     )
 }

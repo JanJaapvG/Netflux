@@ -17,12 +17,8 @@ export default function Toolbar() {
     // Rendering
     return (
 
-        <div id="left">
-            <h1>Netflux</h1>
-            
-            <div id="right">
-                <Login/>
-            </div>
+        <div>
+            <h1>Netflux<Login/></h1>
         </div>
     )
 }

@@ -4,7 +4,7 @@ export default function Login() {
 
     return (
         <div>
-            <button>Login</button>
+            <button className = "primaryButton">Login</button>
         </div>
     )
 }
