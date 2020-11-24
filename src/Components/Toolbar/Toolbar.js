@@ -16,11 +16,13 @@ export default function Toolbar() {
 
     // Rendering
     return (
-        <div className = "header">
-            <div id = "title">
-                <h1 className = "title">Netflux</h1>
-            </div>     
-                <Login/>    
+        <div className="header-wrapper">
+            <div className="header">
+                <div id="title">
+                    <h1 className="title">Netflux</h1>
+                </div>
+                <Login/>
+            </div>
         </div>
     )
 }
