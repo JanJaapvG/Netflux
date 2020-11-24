@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import SignUpForm from '../Components/SignUpForm/SignUpForm';
-import Toolbar from '../Components/Toolbar/Toolbar';
 
 export default function LandingPage() {
     const [color, setColor] = useState("red");
@@ -30,10 +29,6 @@ export default function LandingPage() {
    
     return (
         <div>
-            <div className = "header-wrapper">
-                <Toolbar></Toolbar>
-            </div>
-            
             <div className = "form-wrapper">
                 <SignUpForm></SignUpForm>
             </div>
