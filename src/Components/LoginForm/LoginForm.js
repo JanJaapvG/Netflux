@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function LoginForm() {
     return (
-        <div>
+        <div id = "loginForm">
             <h1>Inloggen</h1>
                 <form>
                     <input type="email" required onChange = {e => setEmail(e.target.value)}></input>

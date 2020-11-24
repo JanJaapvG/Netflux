@@ -1,20 +1,50 @@
 * {
+    user-select: none;
+}
+
+.header-wrapper {
+    margin: 20px;
+}
+
+.header{
+    display:flex; 
+    flex-direction:row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#title {
     color: red;
 }
 
-/* div#header {
-    
+button.primary-button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin: 21.44px 0px;
 }
 
-button.primaryButton {
-
-} */
-/* <button className="CTA"  id="ID_CTA">AAN DE SLAG </button>
-
-button.CTA {
-
+#SignUpForm {
+    position: relative;
+    width: 100%;
+    padding: 75px 0;
+    max-width: 950px;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 1;
 }
 
-button#ID_CTA {
-
-} */
+.input-email {
+    border: none;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 12px;
+    margin: 21.44px 0px;
+}

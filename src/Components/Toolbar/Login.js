@@ -3,8 +3,8 @@ import React, { useState, useEffect } from 'react'
 export default function Login() {
 
     return (
-        <div>
-            <button className = "primaryButton">Login</button>
+        <div id = "login-button">
+            <button className = "primary-button">Login</button>
         </div>
     )
 }
