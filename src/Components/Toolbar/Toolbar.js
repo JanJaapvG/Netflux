@@ -1,5 +1,6 @@
 import React from 'react'
 import Login from './Login'
+import { Link } from 'react-router-dom'
 
 export default function Toolbar() {
     // declarations
@@ -18,10 +19,12 @@ export default function Toolbar() {
     return (
         <div className="header-wrapper">
             <div className="header">
-                <div id="title">
-                    <h1 className="title">Netflux</h1>
-                </div>
-                <Login/>
+                <Link to='/' style={{ textDecoration: 'none' }}>
+                    <div id="title">
+                        <h1 className="title">Netflux</h1>
+                    </div>
+                </Link>
+                <Login />
             </div>
         </div>
     )

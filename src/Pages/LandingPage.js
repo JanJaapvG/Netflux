@@ -30,7 +30,7 @@ export default function LandingPage() {
     return (
         <div>
             <div className = "form-wrapper">
-                <SignUpForm></SignUpForm>
+                <SignUpForm />
             </div>
         </div>
     )

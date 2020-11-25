@@ -10,15 +10,18 @@ export default function LoginForm() {
         console.log(password);
         e.preventDefault();
     }
-    
+
     return (
-        <div id = "loginForm">
+        <div id="login-form">
             <h1>Inloggen</h1>
-                <form>
-                    <input className = "input-field" type="email" required onChange = {e => setEmail(e.target.value)}></input>
-                    <input className = "input-field" type="password" required onChange = {e => setPassword(e.target.value)}></input>
-                    <button type="Login" className = "primary-button" onClick = {submitCredentials}>LOGIN</button>
-                </form>
+            <form>
+                <div>
+                    <input className="input-field" type="email" placeholder="e-mail" required onChange={e => setEmail(e.target.value)}></input>
+                    <br />
+                    <input className="input-field" type="password" placeholder="password" required onChange={e => setPassword(e.target.value)}></input>
+                </div>
+                <button type="Login" className="primary-button" onClick={submitCredentials}>Inloggen</button>
+            </form>
         </div>
     )
 }
