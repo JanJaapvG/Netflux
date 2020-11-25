@@ -19,7 +19,7 @@ export default function Toolbar() {
     return (
         <div className="header-wrapper">
             <div className="header">
-                <Link to='/' style={{ textDecoration: 'none' }}>
+                <Link to='/home' style={{ textDecoration: 'none' }}>
                     <div id="title">
                         <h1 className="title">Netflux</h1>
                     </div>
