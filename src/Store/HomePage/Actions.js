@@ -1,16 +1,12 @@
 import Axios from "axios";
 
-// URL and keys, later to be added into a gonfic file => to .env => to gitignore
+// URL and keys, later to be added into a confic file => to .env => to gitignore
+const API_KEY = '9e381b67';
 
-// http://www.omdbapi.com/?apikey=9e381b67&t=star+wars
 export const URL = 'http://www.omdbapi.com/';
 
-// 9e381b67
-const API_KEY = '9e381b67';
-console.log(API_KEY);
-
-
 export const STARWARS = 'STARWARS_MOVIES';
+
 
 // Action creator function always the same syntax
 export function FetchedMovieData(data){
@@ -27,7 +23,6 @@ export function getMovieData(){
         try{
             const response = await Axios.get(`${URL}?apikey=${API_KEY}&t=star+wars`);
             console.log('MA DATA', response.data)
-            console.log(API_KEY)
 
             dispatch(FetchedMovieData(response.data))
 
